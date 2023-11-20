@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="author" content="Kishore"/>
+        <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Calculator</h1>
+        </header>
+        <main>
+            <section>
+                <input type="text" id="number-input" name="number-input" value="0"/>
+                <button onclick="appending('+')">+</button>
+                <button onclick="appending('*')">x</button>
+                <button onclick="appending('-')">-</button>
+                <button onclick="appending('/')">/</button>
+                <button onclick="appending('1')">1</button>
+                <button onclick="appending('2')">2</button>
+                <button onclick="appending('3')">3</button>
+                <button class="button-4" onclick="appending('4')">4</button>
+                <button onclick="appending('5')">5</button>
+                <button onclick="appending('6')">6</button>
+                <button class="button-7" onclick="appending('7')">7</button>
+                <button onclick="appending('8')">8</button>
+                <button onclick="appending('9')">9</button>
+                <button class="button-0" onclick="appending('0')">0</button>
+                <button onclick="appending('.')">.</button>
+                <button onclick="onClear()">C</button>
+                <button class="Equal-to" onclick="equalTo()">=</button>
+                <button id="clear" onclick="deleteFunction()">
+                    <img src="/Images/cancel.png" />
+                </button>
+                <button onclick="answerFunction()" disabled>Ans</button>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
