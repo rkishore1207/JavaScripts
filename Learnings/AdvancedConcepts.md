@@ -11,3 +11,23 @@ console.log(result);
 var sum = add;
 console.log(sum(3,4));
 ```
+## Hoisting
+* Initialize a variable before its declaration is called hoisting.
+* Javascript execution is executed by two phases, one is **Memory phase** and other is **code execution**.
+* During memory execution, all the variables are stored in memory with undefined and all the functions are stored with function body.
+```javascript
+console.log(number); //undefined
+greet(); //welcome
+
+var number = 2;
+function greet(){
+    console.log("welcome!");
+}
+
+add(2,3);//type error 
+//because add is not a function and its variable but pointing to a function so its error
+
+var add = function(a,b){
+    console.log(a+b);
+}
+```
