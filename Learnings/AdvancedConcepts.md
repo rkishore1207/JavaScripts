@@ -31,3 +31,8 @@ var add = function(a,b){
     console.log(a+b);
 }
 ```
+### Problems with 'var'
+#### Redeclaration Issue
+* Unlike other programming languages, we will be able to **redeclare** the variable with **same name**.
+#### Scoping issue
+* Variables declared with `var` keyword are **not block scoped** but **function scoped**.
