@@ -41,3 +41,21 @@ var add = function(a,b){
 * `const` keyword we **cannot even reassign** the value and it is also block scoped.
 ![var,let and const](https://github.com/rkishore1207/JavaScripts/assets/146698138/586c9a99-5f37-4806-945c-70b99d4095a4)
 
+## Array and Object Destructuring
+```javascript
+let array=['Hi',"Kishore"];
+let[first,second]=array;
+```
+```javascript
+let myObj={
+    name:"Kishore",
+    age:21,
+    number:"8940804555"
+    address:{
+        state:"Tamil Nadu",
+        city:"SivaKasi"
+    }
+}
+// Destructuring variable name same as the object's key names.
+let {name:n,age,number,address:{state,city}}=myobj
+```
