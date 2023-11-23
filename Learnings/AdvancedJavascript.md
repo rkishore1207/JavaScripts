@@ -59,3 +59,6 @@ let myObj={
 // Destructuring variable name same as the object's key names.
 let {name:n,age,number,address:{state,city}}=myobj
 ```
+## Modularities
+* Wrote functions in one file and exports those functions and consumes that in other files for to modularize our applications
+* That exports statement is like objects and we should give key and value is our current file's function name.
