@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quizz App</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="author" content="Kishore"/>
+        <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Quiz App</h1>
+        </header>
+        <main>
+            <section>
+                <ul id="numbers-list"></ul>
+                <p id="question"></p>
+                <div id="input-checkButton">
+                    <input type="text" name="answer" id="answer"/>
+                    <button id="check-button" onclick="checkAnswer()">Check</button>
+                    <div id="message"></div>
+                </div>
+                <button onclick="nextQuestion()">Next</button>
+            </section>
+        </main>
+        <footer></footer>
+
+        <div class="container">
+            <div class="content-wrapper">
+              <div class="content">Content 1</div>
+              <div class="content">Content 2</div>
+              <div class="content">Content 3</div>
+              <!-- Add more content divs as needed -->
+            </div>
+            <button class="prev-btn">&larr; Prev</button>
+            <button class="next-btn">Next &rarr;</button>
+        </div>
+    </body>
+</html>
