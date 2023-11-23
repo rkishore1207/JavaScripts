@@ -40,3 +40,4 @@ var add = function(a,b){
 * We cannot declare the `let` keyword but we can **reassign** and it is block as well as function scoped.
 * `const` keyword we **cannot even reassign** the value and it is also block scoped.
 ![var,let and const](https://github.com/rkishore1207/JavaScripts/assets/146698138/586c9a99-5f37-4806-945c-70b99d4095a4)
+
