@@ -65,3 +65,7 @@ let {name:n,age,number,address:{state,city}}=myobj
 ## Imperative and Declarative way of writing code
 * Imperative is How to go about a problem and declarative is what do you achieve from the problem.
 * To solve a problem in a usual way is **imperative** and wrote logics in a functions is a **declarative** way.
+
+## Pure Functions
+* while we passing `same parameters` to the functions it should return the `same output`.
+* This function `should not` depend on the **external factors** and **predefined functions**.
