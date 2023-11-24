@@ -60,5 +60,8 @@ let myObj={
 let {name:n,age,number,address:{state,city}}=myobj
 ```
 ## Modularities
-* Wrote functions in one file and exports those functions and consumes that in other files for to modularize our applications
+* Wrote functions in one file and exports those functions and consumes that in other files for to modularize our applications.
 * That exports statement is like objects and we should give key and value is our current file's function name.
+## Imperative and Declarative way of writing code
+* Imperative is How to go about a problem and declarative is what do you achieve from the problem.
+* To solve a problem in a usual way is **imperative** and wrote logics in a functions is a **declarative** way.
