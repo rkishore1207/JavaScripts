@@ -17,3 +17,20 @@
     object-fit:cover;
 }
 ```
+
+## Default star selector properties
+```javascript
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'';
+}
+```
+
+## Default body properties
+```javascript
+body{
+    height:100vh;
+}
+```

@@ -68,7 +68,7 @@ function printNumbers(){
     for(let i=0;i<questions.length;i++){
         let listItem=document.createElement('li');
         listItem.textContent=i+1;
-        listItem.className=`${numbersColor[i]==1 ? 'passed': ''} ${numbersColor[i]==0 ? 'failed': ''}`;
+        listItem.className=`${numbersColor[i]==1 ? 'passed': ''} ${numbersColor[i]==0 ? 'failed': ''} swiper-slide`;
         listItem.onclick=()=>{
             showQuestion(i);
             pointer=i;
@@ -80,37 +80,7 @@ function printNumbers(){
 document.addEventListener("DOMContentLoaded",function(){
     showQuestion(0);
     message=document.getElementById("message");
-    printNumbers();4
-
-
-
-    const container = document.querySelector('.container');
-    const contentWrapper = document.querySelector('.content-wrapper');
-    const contents = document.querySelectorAll('.content');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-  
-    let index = 0;
-  
-    prevBtn.addEventListener('click', function() {
-      if (index > 0) {
-        index--;
-        translateContent();
-      }
-    });
-  
-    nextBtn.addEventListener('click', function() {
-      if (index < contents.length - 1) {
-        index++;
-        translateContent();
-      }
-    });
-  
-    function translateContent() {
-      const contentWidth = contents[index].offsetWidth;
-      contentWrapper.style.transform = `translateX(-${contentWidth * index}px)`;
-    }
-
+    printNumbers();
     
 });
 
