@@ -69,3 +69,7 @@ let {name:n,age,number,address:{state,city}}=myobj
 ## Pure Functions
 * while we passing `same parameters` to the functions it should return the `same output`.
 * This function `should not` depend on the **external factors** and **predefined functions**.
+
+## CallBackFunction
+* **Passing a function** as an `argument` to another function and invoke that new function inside the main function.
+* If the new function have parameter, then during invokation of the main fuction **pass the required arguments** for the new function also.
