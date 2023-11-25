@@ -73,3 +73,12 @@ let {name:n,age,number,address:{state,city}}=myobj
 ## CallBackFunction
 * **Passing a function** as an `argument` to another function and invoke that new function inside the main function.
 * If the new function have parameter, then during invokation of the main fuction **pass the required arguments** for the new function also.
+
+## Higher Order Functions
+> - <mark>It always receives a function</mark>
+### Map
+* It process every element in an array and do specific operations in the body.
+* It will return new array.
+
+### For Each
+* Almost same with the Map function except it could not return anything.
