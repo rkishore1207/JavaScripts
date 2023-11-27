@@ -82,3 +82,15 @@ let {name:n,age,number,address:{state,city}}=myobj
 
 ### For Each
 * Almost same with the Map function except it could not return anything.
+
+### Find
+* It will process all the element in the array, return 1st element which it encounter the given condition.
+
+### Find Index
+* Same to find but it will return that element's index.
+
+### Some
+* It will return true if any one of the element in the array satisfies the condition or else it will return false.
+
+### Every
+* It will return true if every element in the array needs to satisfy the condition or else it will return false
