@@ -52,7 +52,7 @@ h1{
     top:48%;
     left: 0;
     z-index: -1;
-    transition: all 0.3s ease-in;
+    transition: all 1s ease-in;
 }
 
 /* Circles */
@@ -71,7 +71,7 @@ h1{
 
 .active{
     border: 4px solid blue;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 /* Button Container */

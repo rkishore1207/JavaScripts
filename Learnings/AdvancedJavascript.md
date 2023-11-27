@@ -94,3 +94,9 @@ let {name:n,age,number,address:{state,city}}=myobj
 
 ### Every
 * It will return true if every element in the array needs to satisfy the condition or else it will return false
+
+### Filter
+* Similar to map, it will also go through all the elements and process the conditions which we provided.
+
+#### Reduce
+* Unlike other functions, it will return only single value, and it follows accumulator and value
