@@ -98,5 +98,9 @@ let {name:n,age,number,address:{state,city}}=myobj
 ### Filter
 * Similar to map, it will also go through all the elements and process the conditions which we provided.
 
-#### Reduce
+### Reduce
 * Unlike other functions, it will return only single value, and it follows accumulator and value
+
+### Chaining 
+* we can able to append one function with in the other by taking the output of one function and give that to the input of appending function.
+* then totally it will return the appending function's result.
