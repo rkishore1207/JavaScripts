@@ -104,3 +104,70 @@ let {name:n,age,number,address:{state,city}}=myobj
 ### Chaining 
 * we can able to append one function with in the other by taking the output of one function and give that to the input of appending function.
 * then totally it will return the appending function's result.
+
+## Object Oriented Programming in javaScript
+* Naturally javascript **isn't language of oops** like java but with the help `prototyping` concept we can write javascript code as oops paradigm.
+
+## this keyword
+* this keyword is perform different in various environments such as browser and node.js
+* And these two environments having two different modes are **strict and Non-strict**. 
+
+### this keyword in node.js -> non strict
+* global--> console.log(this) //**empty object**
+* regular function --> pointing to the **global object**
+* method in the object --> pointing to the **object itself**
+* object -> func -> regular func --> pointing to the **global object**
+ 
+```javascript
+let myObj={
+    name:"Kishore",
+    age:21,
+    func:function(){
+        console.log(this);
+    }
+};
+myObj.func();
+```
+ 
+### this keyword in node.js -> strict
+* global--> console.log(this) //**empty object**
+* regular function --> **undefined**
+* method in the object --> pointing to the **object itself**
+* object -> func -> regular func --> **undefined**
+ 
+### this keyword in Browser -> non strict
+* global--> console.log(this) //window object
+* regular function --> window object
+* method in the object --> pointing to the object itself
+* object -> func -> regular func --> window object
+ 
+## this keyword in Browser -> strict
+* global--> console.log(this) //window object
+* regular function --> undefined
+* method in the object --> pointing to the object itself
+* object -> func -> regular func --> undefined
+
+## Constructor Function
+* With this function we can create **lot of objects** that is this function act like a class.
+
+```javascript
+function createCar(_name,_model,_color){
+    this.name=_name;
+    this.model=_model;
+    this.color=_color;
+    this.drive=function(){
+        console.log(`Car name is ${this.name} and color is ${this.color}`);
+    }
+}
+ 
+let car1 = new createCar("X4","BMW","Red");
+ 
+//console.log(car1.name);
+car1.drive();
+
+```
+## Classes in JavaScript
+* As like java, javascript also having class like structure and inside it has constructor function as well as we can write methods inside it.
+## Classes Inheritance
+* Copying the properties and methods of one class and inject that in another class by `extends` keyword.
+* In the child class we can instantiate the parent's class properties by `super` keyword.
