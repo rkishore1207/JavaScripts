@@ -178,3 +178,6 @@ car1.drive();
 * if you request one function, it will check in the current object's prototype -> check in the default object prototype -> check in the null container -> in any of the case it's not found then return `error`.
 * this is called `prototype chaininig`.
 ![Prototype Chaining](https://github.com/rkishore1207/JavaScripts/assets/146698138/3f429cfa-d384-4da8-9878-2b35634a6404)
+
+## Encapsulation
+* We don't need to expose the properties of a class so we could create separate method to invoke the paricular property.
