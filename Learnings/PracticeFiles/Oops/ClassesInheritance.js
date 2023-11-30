@@ -14,6 +14,10 @@ class Teacher extends Person{
         super(_name,_age);
         this.classStrength=_classStrength;
     }
+
+    help(){
+        super.welcome();
+    }
 }
 
 class Student extends Person{
@@ -29,4 +33,4 @@ let teacher= new Teacher("Mathan",22,30);
 console.log(student);
 console.log(teacher);
 
-student.welcome();
+teacher.help();
