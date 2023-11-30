@@ -171,3 +171,10 @@ car1.drive();
 ## Classes Inheritance
 * Copying the properties and methods of one class and inject that in another class by `extends` keyword.
 * In the child class we can instantiate the parent's class properties by `super` keyword.
+
+## Prototype
+* Each object that we created defultly inherit the `Prototype object` in it and we can able to access the **properties and methods** inside that prototype object.
+* But if we create object by **Constructor function** it will inherit the prototype object at `two times`.
+* if you request one function, it will check in the current object's prototype -> check in the default object prototype -> check in the null container -> in any of the case it's not found then return `error`.
+* this is called `prototype chaininig`.
+![Prototype Chaining](https://github.com/rkishore1207/JavaScripts/assets/146698138/3f429cfa-d384-4da8-9878-2b35634a6404)
