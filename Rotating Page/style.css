@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Circle Contents */
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    top: -40px;
+    left:-40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+main{
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.menu-button{
+    top:55px;
+    left:55px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrong-button{
+    top: 75px;
+    left: 0px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Container Contents */
+.container{
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color:antiquewhite;
+}
+
+.show-nav{
+    transform: rotate(-15deg);
+}
+
+/* Section Contents */
+#section{
+    border:1px solid black;
+    height: fit-content;
+    width: 100%;
+}
+
+/* Nav Bar Contents */
+nav{
+    position: fixed;
+    bottom: 120px;
+    left:-120px;
+    transform: rotate(15deg);
+}
+
+li{
+    list-style-type: none;
+    margin:10px;
+    transition: transform 1s ease-in;
+}
+
+li:hover{
+    padding: 10px;
+    background-color:thistle;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+li:nth-of-type(1){
+    position: relative;
+    left: -20px;
+}
+
+li:nth-of-type(2){
+    position: relative;
+    left: 0;
+}
+
+li:nth-of-type(3){
+    position: relative;
+    right: -20px;
+}
+
