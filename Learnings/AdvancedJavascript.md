@@ -181,3 +181,10 @@ car1.drive();
 
 ## Encapsulation
 * We don't need to expose the properties of a class so we could create separate method to invoke the paricular property.
+
+## Serial Execution of Async Functions
+* We need to pass the subsequent function inside the previous function.
+
+## SetTimeout and setInterval
+* Both are asynchronous functions and both are accepting callback functions.
+* setInterval() execute infinitely until it reaches exit condition.
